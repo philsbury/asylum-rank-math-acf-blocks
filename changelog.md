@@ -11,4 +11,9 @@
 
 ---
 
-## 1.0.0
+## [Unreleased] - yyyy-mm-dd
+
+## [1.0.0] - 2024-12-11
+
+### Added
+- Initial Release
