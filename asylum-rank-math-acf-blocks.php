@@ -6,7 +6,7 @@
  * Version:           	 1.0.0
  * Author:            	 Asylum Digital
  * Author URI:        	 https://www.asylumdigital.co.uk
- * Text Domain:       	 rank-math-acf-block-analyser
+ * Text Domain:       	 asylum-rank-math-acf-blocks
  */
 
  if (!defined('WPINC')) {
@@ -16,7 +16,7 @@
 define('ASYLUM_RANK_MATH_ACF_BLOCK_ANALYSER_PATH', plugin_dir_path(__FILE__));
 define('ASYLUM_RANK_MATH_ACF_BLOCK_ANALYSER_URL', plugin_dir_url(__FILE__));
 define('ASYLUM_RANK_MATH_ACF_BLOCK_ANALYSER_VERSION', '1.0.0');
-define('ASYLUM_RANK_MATH_ACF_BLOCK_ANALYSER_SLUG', 'rank-math-acf-block-analyser');
+define('ASYLUM_RANK_MATH_ACF_BLOCK_ANALYSER_SLUG', 'asylum-rank-math-acf-blocks');
 
 require_once('vendor/autoload.php');
 require_once('src/Bootstrap.php');
