@@ -3,7 +3,7 @@
 /**
  * Plugin Name:       	 Rank Math ACF Block analyser
  * Description:       	 Add ACF block content to Rank Math data
- * Version:              0.0.1
+ * Version:              0.0.2
  * Author:            	 Asylum Digital
  * Author URI:        	 https://www.asylumdigital.co.uk
  * Text Domain:       	 asylum-rank-math-acf-blocks
@@ -16,7 +16,7 @@
 
 define('ASYLUM_RANK_MATH_ACF_BLOCK_ANALYSER_PATH', plugin_dir_path(__FILE__));
 define('ASYLUM_RANK_MATH_ACF_BLOCK_ANALYSER_URL', plugin_dir_url(__FILE__));
-define('ASYLUM_RANK_MATH_ACF_BLOCK_ANALYSER_VERSION', '0.0.1');
+define('ASYLUM_RANK_MATH_ACF_BLOCK_ANALYSER_VERSION', '0.0.2');
 define('ASYLUM_RANK_MATH_ACF_BLOCK_ANALYSER_SLUG', 'asylum-rank-math-acf-blocks');
 
 require_once('vendor/autoload.php');
