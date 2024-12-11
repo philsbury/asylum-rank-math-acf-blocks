@@ -47,7 +47,7 @@ class RankMathAcfBlock {
         if (blockContent.trim() === '') {
             return content;
         }
-        return blockContent;
+        return content + blockContent;
     }
 
 
