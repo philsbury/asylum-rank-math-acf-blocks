@@ -13,12 +13,6 @@
 
 ## [Unreleased] - yyyy-mm-dd
 
-## [0.0.1] - 2024-12-11
-
-### Updated
-
-- Composer dependencies
-
 ## [1.0.0] - 2024-12-11
 
 ### Added
