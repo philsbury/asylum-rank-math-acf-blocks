@@ -30,5 +30,8 @@
     "laravel-mix": "^6.0.6",
     "laravel-mix-polyfill": "^3.0.1",
     "replace": "^1.2.1"
+  },
+  "dependencies": {
+    "lodash.debounce": "^4.0.8"
   }
 }
