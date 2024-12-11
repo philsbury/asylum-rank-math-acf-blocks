@@ -1,37 +1,35 @@
 {
-  "name": "rank-math-acf-block-analyser",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "mix",
-    "watch": "mix watch",
-    "build": "mix --production",
-    "production": "npm run build",
-    "patch": "npm --no-git-tag-version version patch",
-    "minor": "npm --no-git-tag-version version minor",
-    "major": "npm --no-git-tag-version version major",
-    "version": "node bin/version.js",
-    "postversion": "git push && git tag $npm_package_version && git push --tags"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org/asylumdigitalltd/rank-math-acf-block-analyser.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/asylumdigitalltd/rank-math-acf-block-analyser#readme",
-  "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/plugin-proposal-export-namespace-from": "^7.8.3",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "laravel-mix": "^6.0.6",
-    "laravel-mix-polyfill": "^3.0.1",
-    "replace": "^1.2.1"
-  },
-  "dependencies": {
-    "lodash.debounce": "^4.0.8"
-  }
+    "name": "rank-math-acf-block-analyser",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "mix",
+        "watch": "mix watch",
+        "build": "mix --production",
+        "production": "npm run build",
+        "patch": "node bin/release.js patch",
+        "minor": "node bin/release.js minor",
+        "major": "node bin/release.js major"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@bitbucket.org/asylumdigitalltd/rank-math-acf-block-analyser.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/asylumdigitalltd/rank-math-acf-block-analyser#readme",
+    "devDependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.8.3",
+        "@babel/plugin-proposal-export-namespace-from": "^7.8.3",
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "laravel-mix": "^6.0.6",
+        "laravel-mix-polyfill": "^3.0.1",
+        "replace": "^1.2.1"
+    },
+    "dependencies": {
+        "lodash.debounce": "^4.0.8"
+    }
 }
