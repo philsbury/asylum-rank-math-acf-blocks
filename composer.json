@@ -1,40 +1,43 @@
 {
-  "name": "asylum/wp-plugin-boilerplate",
-  "description": "Asylum WordPress Plugin",
-  "type": "project",
-  "repositories": {
-    "asylum/utility": {
-      "type": "vcs",
-      "url": "git@github.com:philsbury/asylum-utility.git"
+    "name": "asylum/wp-plugin-boilerplate",
+    "description": "Asylum WordPress Plugin",
+    "type": "project",
+    "repositories": {
+        "asylum/utility": {
+            "type": "vcs",
+            "url": "git@github.com:philsbury/asylum-utility.git"
+        },
+        "asylum/common": {
+            "type": "vcs",
+            "url": "git@github.com:philsbury/asylum-common.git"
+        },
+        "asylum/admin": {
+            "type": "vcs",
+            "url": "git@github.com:philsbury/asylum-admin.git"
+        },
+        "asylum/updater": {
+            "type": "vcs",
+            "url": "git@github.com:philsbury/asylum-updater.git"
+        }
     },
-    "asylum/common": {
-      "type": "vcs",
-      "url": "git@github.com:philsbury/asylum-common.git"
+    "authors": [
+        {
+            "name": "Asylum Digital",
+            "email": "hello@asylumdigial.co.uk"
+        }
+    ],
+    "require": {
+        "asylum/utility": "dev-master",
+        "asylum/common": "dev-master",
+        "asylum/updater": "dev-main",
+        "nicmart/string-template": "^0.1.1"
     },
-    "asylum/admin": {
-      "type": "vcs",
-      "url": "git@github.com:philsbury/asylum-admin.git"
+    "autoload": {
+        "psr-4": {
+            "Asylum\\RankMath\\": "src"
+        }
     },
-    "asylum/updater": {
-      "type": "vcs",
-      "url": "git@github.com:philsbury/asylum-updater.git"
+    "require-dev": {
+        "symfony/var-dumper": "^7.2"
     }
-  },
-  "authors": [
-    {
-      "name": "Asylum Digital",
-      "email": "hello@asylumdigial.co.uk"
-    }
-  ],
-  "require": {
-    "asylum/utility": "dev-master",
-    "asylum/common": "dev-master",
-    "asylum/updater": "dev-main",
-    "nicmart/string-template": "^0.1.1"
-  },
-  "autoload": {
-    "psr-4": {
-      "Asylum\\RankMath\\": "src"
-    }
-  }
 }

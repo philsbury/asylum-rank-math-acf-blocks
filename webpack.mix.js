@@ -1,12 +1,12 @@
-let mix = require('laravel-mix')
+const mix = require('laravel-mix')
 require('laravel-mix-polyfill');
 
 
 mix
-  .sass('src/Resources/assets/scss/admin/admin.scss', 'dist/')
-  .sass('src/Resources/assets/scss/public/main.scss', 'dist/')
-  .js('src/Resources/assets/js/admin/admin.js', 'dist/')
-  .js('src/Resources/assets/js/public/main.js', 'dist/')
+//   .sass('src/Resources/assets/scss/admin/admin.scss', 'dist/')
+//   .sass('src/Resources/assets/scss/public/main.scss', 'dist/')
+  .js('src/Resources/assets/js/admin/analyzer.js', 'dist/')
+//   .js('src/Resources/assets/js/public/main.js', 'dist/')
   .copyDirectory('src/Resources/assets/img', 'dist/img')
   .polyfill({
     enabled: true,
@@ -15,20 +15,18 @@ mix
     debug: true,
   });
 
-// if (!mix.inProduction()) {
-//   mix.webpackConfig({
-//     devtool: 'inline-source-map'
-//   })
-// }
-
-// if (mix.inProduction()) {
-//   mix.options({
-//     terser: {
-//       terserOptions: {
-//         compress: {
-//           drop_console: true
-//         }
-//       }
-//     }
-//   });
-// }
+if (!mix.inProduction()) {
+  mix.webpackConfig({
+    devtool: 'inline-source-map'
+  })
+} else {
+  mix.options({
+    terser: {
+      terserOptions: {
+        compress: {
+          drop_console: true
+        }
+      }
+    }
+  });
+}

@@ -7,8 +7,9 @@
  * Author:            	 Asylum Digital
  * Author URI:        	 https://www.asylumdigital.co.uk
  * Text Domain:       	 asylum-rank-math-acf-blocks
+ * Requires Plugins:     seo-by-rank-math
  */
-
+// , advanced-custom-fields
  if (!defined('WPINC')) {
      die;
  }
